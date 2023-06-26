@@ -34,34 +34,60 @@ main {
 }
 
 section {
-  border: solid 2px darkred;
+  border: solid 4px darkred;
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: auto;
   padding: 20px 20px;
-  align-items: center;
   list-style: none;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  justify-items: flex-end;
+  justify-items: end;
+  align-items: flex-start;
   list-style: none;
+  padding-top: 15px;
 }
 
 .flexbox-container {
+  position: relative;
+  top: -25px;
+  right: auto;
+  /*nach dem einfügen der oberen 3 zeilen,
+flexbox-container über dem header beim
+scrollen; bookmark ist nicht rechts positioniert.*/
   background-color: rgb(119, 195, 198);
+  text-align: center;
+  color: rgb(5, 5, 107);
 }
 
+.bookmark {
+  width: 45px;
+  position: absolute;
+  top: -25px;
+  border: solid darkred 2px;
+}
+
+/*answer-button*/
+main button {
+  color: darkred;
+  background-color: white;
+  width: 80px;
+  height: 25px;
+}
+
+/*alles vom footer:*/
 footer {
   background-color: rgb(119, 195, 198);
   border-top: solid 4px darkred;
   position: fixed;
-  bottom: 0;
+  bottom: 0%;
   width: 100%;
-  height: 60px;
+  max-height: 12%;
+  padding-bottom: 15%;
 }
 
 div {
