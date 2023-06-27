@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/*Quiz-APP - HOME (landing page)*/
+
 body {
   background-color: rgb(149, 240, 244);
 }
@@ -65,10 +67,15 @@ scrollen; bookmark ist nicht rechts positioniert.*/
 }
 
 .bookmark {
-  width: 45px;
   position: absolute;
   top: -25px;
-  border: solid darkred 2px;
+  border: solid 2px darkred;
+  width: 40px;
+  height: 40px;
+}
+
+.bookmark:hover {
+  background-color: rgb(67, 111, 113);
 }
 
 /*answer-button*/
@@ -77,6 +84,10 @@ main button {
   background-color: white;
   width: 80px;
   height: 25px;
+}
+
+main button:hover {
+  background-color: rgb(67, 111, 113);
 }
 
 /*alles vom footer:*/
@@ -101,4 +112,18 @@ nav {
 
 img {
   width: 40px;
+  height: 40px;
+  background: transparent;
 }
+
+div button:hover {
+  background-color: rgb(67, 111, 113);
+}
+
+/*Quiz-APP - BOOKMARK-PAGE*/
+
+.bookmark:visited {
+  color: rgb(67, 111, 113);
+}
+
+/*Quiz-APP - BOOKMARK-PAGE*/
