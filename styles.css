@@ -90,7 +90,7 @@ footer {
   padding-bottom: 15%;
 }
 
-div {
+nav {
   display: flex;
   flex-direction: row;
   align-items: center;
