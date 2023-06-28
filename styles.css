@@ -47,7 +47,6 @@ section {
 
 ul {
   display: flex;
-  flex-direction: row;
   justify-items: end;
   align-items: flex-start;
   list-style: none;
@@ -57,7 +56,7 @@ ul {
 .flexbox-container {
   position: relative;
   top: -25px;
-  right: auto;
+  right: 0;
   /*nach dem einfügen der oberen 3 zeilen,
 flexbox-container über dem header beim
 scrollen; bookmark ist nicht rechts positioniert.*/
@@ -95,7 +94,7 @@ footer {
   background-color: rgb(119, 195, 198);
   border-top: solid 4px darkred;
   position: fixed;
-  bottom: 0%;
+  bottom: 0;
   width: 100%;
   max-height: 12%;
   padding-bottom: 15%;
