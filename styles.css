@@ -1,6 +1,6 @@
 :root {
   --color-h1-and-border: darkred;
-  --background-color-dark: rgb(67, 111, 113);
+  --background-color-dark: rgb(119, 195, 198);
   --background-color-light: rgb(149, 240, 244);
 }
 
@@ -51,6 +51,10 @@ section {
   list-style: none;
 }
 
+h2 {
+  font-size: medium;
+}
+
 ul {
   display: flex;
   justify-items: end;
@@ -62,21 +66,14 @@ ul {
 .flexbox-container {
   position: relative;
   top: -25px;
-  right: 0;
-  /*nach dem einfügen der oberen 3 zeilen,
-flexbox-container über dem header beim
-scrollen; bookmark ist nicht rechts positioniert.*/
   background-color: rgb(119, 195, 198);
   text-align: center;
-  color: rgb(5, 5, 107);
-}
-
-h2 {
-  font-size: medium;
+  color: rgb(4, 4, 91);
 }
 
 .bookmark {
   position: absolute;
+  right: 4%;
   top: -25px;
   border: solid 2px darkred;
   width: 40px;
@@ -121,7 +118,7 @@ nav {
 
 footer li {
   width: 40px;
-  height: 40px;
+  height: 30px;
   background: transparent;
 }
 
