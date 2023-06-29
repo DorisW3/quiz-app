@@ -1,3 +1,9 @@
+:root {
+  --color-h1-and-border: darkred;
+  --background-color-dark: rgb(67, 111, 113);
+  --background-color-light: rgb(149, 240, 244);
+}
+
 * {
   font-family: sans-serif;
   box-sizing: border-box;
@@ -63,6 +69,10 @@ scrollen; bookmark ist nicht rechts positioniert.*/
   background-color: rgb(119, 195, 198);
   text-align: center;
   color: rgb(5, 5, 107);
+}
+
+h2 {
+  font-size: medium;
 }
 
 .bookmark {
