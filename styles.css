@@ -10,8 +10,6 @@
   --color-h1-and-border: darkred;
   --background-color-dark: rgb(119, 195, 198);
   --background-color-light: rgb(149, 240, 244);
-  --gap: 2rem;
-  --margin: 1rem;
 }
 
 /*Quiz-APP - HOME (landing page)*/
@@ -30,7 +28,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  height: 80px;
+  height: 20vw;
 }
 
 h1 {
@@ -40,7 +38,7 @@ h1 {
 
 .page-title {
   text-transform: uppercase;
-  font-size: medium;
+  font-size: larger;
   color: darkred;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -54,6 +52,7 @@ main {
 
 section {
   border: solid 4px darkred;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -79,6 +78,7 @@ h2 {
   right: 4%;
   top: -25px;
   border: solid 2px rgb(67, 111, 113);
+  border-radius: 2px;
   width: 40px;
   height: 40px;
   align-self: center;
@@ -96,22 +96,21 @@ h2 {
 
 ul {
   display: flex;
-  justify-items: end;
   align-self: center;
   list-style: none;
-  padding-top: 15px;
+  padding-top: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-span {
+.link-button {
   border-radius: 1px;
-  border-color: darkred;
   background-color: white;
-  width: 80px;
+  width: 60px;
   height: 25px;
-  align-self: center;
 }
 
-li a {
+.link-button a {
   text-decoration: none;
   color: rgb(4, 4, 91);
 }
@@ -119,10 +118,11 @@ li a {
 .link:hover {
   background-color: rgb(67, 111, 113);
 }
-
-.active {
+/* funktioniert nicht richtig; nach einem klick sind alle 3 links rot
+a:visited {
   color: darkred;
 }
+*/
 
 /*answer-button*/
 main button {
@@ -144,6 +144,8 @@ img {
   height: 32px;
 }
 
+/*answer-button*/
+
 /*alles vom footer:*/
 footer {
   background-color: rgb(119, 195, 198);
@@ -151,26 +153,43 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-height: 12%;
-  padding-bottom: 15%;
-}
-
-nav {
+  max-height: 20vw;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   list-style: none;
-  padding-top: 6px;
 }
 
-footer li {
+footer nav {
+  display: flex;
+  align-self: center;
+  list-style: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 12px;
+}
+
+/*display: flex;
+  justify-content: space-around;
+  align-items: center;*/
+
+.webpage-button {
+  position: relative;
+  border: solid 2px rgb(67, 111, 113);
+  border-radius: 2px;
   width: 40px;
-  height: 30px;
-  background: transparent;
+  height: 40px;
 }
 
-nav ul:hover {
+.webpage-button img {
+  position: relative;
+  bottom: 0;
+  left: 2px;
+  width: 32px;
+  height: 32px;
+}
+
+.webpage-button:hover {
   background-color: rgb(67, 111, 113);
 }
 

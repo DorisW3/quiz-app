@@ -12,33 +12,32 @@
       <h2 class="page-title">home</h2>
     </header>
 
-    <!----------------main------------------>
+    <!--------------main------------->
 
     <main>
       <section class="question-card">
-        <button class="bookmark image-button" aria-label="bookmark">
+        <button class="bookmark" aria-label="bookmark">
           <img src="/pictures/bookmark-light.svg" alt="bookmark-button" />
         </button>
         <h2>What property flips the axes in flexbox?</h2>
         <button>answer</button>
         <p aria-labelledby="hidden answer" hidden>flex-direction</p>
         <ul>
-          <li><span>
+          <li><button class="link-button">
             <a class="link active" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >#html</a
-            >
-          </span></li>
-          <li><span>
+              >#html</a>
+          </button></li>
+          <li><button class="link-button">
             <a class="link active" 
               href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
               >#flexbox</a
             >
-          </span></li>
-          <li><span>
+          </button></li>
+          <li><button class="link-button">
             <a class="link active" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
               >#css</a
             >
-          </span></li>
+          </button></li>
         </ul>
       </section>
 
@@ -59,27 +58,27 @@
     <footer>
       <nav>
         <ul aria-label="home">
-          <li>
+          <li><button class="webpage-button">
             <a href="./index.html"><img src="/pictures/home-.svg" alt="home-button" />
-            </a></li>
+            </a></button></li>
         </ul>
         <ul aria-label="bookmark">
-          <li>
+          <li><button class="webpage-button">
             <a href="./bookmark.html"><img
               src="/pictures/bookmark-light.svg"
               alt="bookmark-button"
               aria-label="bookmark-button"
             />
-          </a></li>
+          </a></button></li>
         </ul>
         <ul aria-label="profil">
-        <a href="#"><li>
+        <a href="#"><li><button class="webpage-button">
             <img
               src="/pictures/profil.svg"
               alt="profil-button"
               aria-label="profil-button"
             />
-          </a></li>
+          </a></button></li>
         </ul>
       </nav>
     </footer>
