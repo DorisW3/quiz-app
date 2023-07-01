@@ -55,14 +55,6 @@ h2 {
   font-size: medium;
 }
 
-ul {
-  display: flex;
-  justify-items: end;
-  align-items: flex-start;
-  list-style: none;
-  padding-top: 15px;
-}
-
 .question-card {
   position: relative;
   top: -25px;
@@ -84,6 +76,14 @@ ul {
   background-color: rgb(67, 111, 113);
 }
 
+ul {
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  list-style: none;
+  padding-top: 15px;
+}
+
 /*answer-button*/
 main button {
   color: darkred;
@@ -94,6 +94,13 @@ main button {
 
 main button:hover {
   background-color: rgb(67, 111, 113);
+}
+
+img {
+  display: flex;
+  justify-self: center;
+  width: 32px;
+  height: 32px;
 }
 
 /*alles vom footer:*/
