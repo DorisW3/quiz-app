@@ -1,15 +1,17 @@
-:root {
-  --color-h1-and-border: darkred;
-  --background-color-dark: rgb(119, 195, 198);
-  --background-color-light: rgb(149, 240, 244);
-}
-
 * {
   font-family: sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   gap: 1rem;
+}
+
+:root {
+  --color-h1-and-border: darkred;
+  --background-color-dark: rgb(119, 195, 198);
+  --background-color-light: rgb(149, 240, 244);
+  --gap: 2rem;
+  --margin: 1rem;
 }
 
 /*Quiz-APP - HOME (landing page)*/
@@ -20,10 +22,11 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(119, 195, 198);
-  border-bottom: solid 4px darkred;
+  border-bottom: solid 4px;
+  border-color: darkred;
   width: 100%;
   position: fixed;
   top: 0;
@@ -31,6 +34,13 @@ header {
 }
 
 h1 {
+  color: darkred;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-size: medium;
   color: darkred;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -68,13 +78,20 @@ h2 {
   position: absolute;
   right: 4%;
   top: -25px;
-  border: solid 2px darkred;
+  border: solid 2px rgb(67, 111, 113);
   width: 40px;
   height: 40px;
+  align-self: center;
 }
 
 .bookmark:hover {
   background-color: rgb(67, 111, 113);
+}
+
+.question-card img {
+  position: absolute;
+  right: 2px;
+  top: 2px;
 }
 
 ul {
@@ -85,11 +102,26 @@ ul {
   padding-top: 15px;
 }
 
-.link {
+span {
+  border-radius: 1px;
+  border-color: darkred;
+  background-color: white;
+  width: 80px;
+  height: 25px;
+  align-self: center;
+}
+
+li a {
   text-decoration: none;
   color: rgb(4, 4, 91);
-  border: none
+}
+
+.link:hover {
   background-color: rgb(67, 111, 113);
+}
+
+.active {
+  color: darkred;
 }
 
 /*answer-button*/
