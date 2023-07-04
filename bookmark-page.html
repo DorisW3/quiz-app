@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+      <h2 class="page-title">bookmarks</h2>
+    </header>
+
+    <!--------------main------------->
+
+    <main>
+      <section class="question-card">
+        <button class="bookmark" aria-label="bookmark">
+          <img src="/pictures/bookmark-light.svg" alt="bookmark-button" />
+        </button>
+        <h2>What property flips the axes in flexbox?</h2>
+        <button>answer</button>
+        <p aria-labelledby="hidden answer" hidden>flex-direction</p>
+        <ul>
+          <li><button class="link-button">
+            <a class="link active" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              >#html</a>
+          </button></li>
+          <li><button class="link-button">
+            <a class="link active" 
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+              >#flexbox</a
+            >
+          </button></li>
+          <li><button class="link-button">
+            <a class="link active" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+              >#css</a
+            >
+          </button></li>
+        </ul>
+      </section>
+
+      <section class="question-card">
+        <button class="bookmark" aria-label="bookmark">
+          <img src="/pictures/bookmark-light.svg" alt="bookmark-button" />
+        </button>
+        <h2>Lorem Ipsum dolor sit?</h2>
+        <button>answer</button>
+        <p aria-labelledby="hidden answer" hidden>placeholder-text</p>
+      </section>
+
+      <!--*weitere questioncars!!!!-->
+    </main>
+
+    <!----------------footer------------------>
+
+    <footer>
+        <ul aria-label="home">
+          <li><button class="webpage-button">
+            <a href="./index.html"><img src="/pictures/home-.svg" alt="home-button" />
+            </a></button></li>
+        </ul>
+        <ul aria-label="bookmark">
+          <li><button class="webpage-button">
+            <a href="./bookmark.html"><img
+              src="/pictures/bookmark-light.svg"
+              alt="bookmark-button"
+              aria-label="bookmark-button"
+            />
+          </a></button></li>
+        </ul>
+        <ul aria-label="profil">
+        <a href="#"><li><button class="webpage-button">
+            <img
+              src="/pictures/profil.svg"
+              alt="profil-button"
+              aria-label="profil-button"
+            />
+          </a></button></li>
+        </ul>
+    </footer>
+  </body>
+</html>
